@@ -1,0 +1,87 @@
+
+select {
+  border-radius: 30px;
+  padding: 9px 15px;
+box-sizing: border-box;
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 100%;
+
+  border: 1px solid #B3B4C9;
+  background: #FFF;
+  box-shadow: 5px 5px 10px rgba(93, 89, 159, 0.16);
+}
+
+.input-wrapper {
+  box-sizing: border-box;
+  border-radius: 28px;
+  border: 1px solid #B3B4C9;
+  background: #FFF;
+  box-shadow: 5px 5px 10px rgba(93, 89, 159, 0.16);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+
+
+  svg {
+    width: 40px;
+
+    path {
+      stroke: #B3B4C9;
+      stroke-width: 1px;
+    }
+  }
+
+  &.active {
+    border-color: #191B2A;
+
+    svg {
+      path {
+        stroke: #191B2A;
+      }
+    }
+  }
+
+  input[type=text], input[type=search], input[type=password], input[type=number], textarea, select {
+    font-size: 16px;
+    font-style: normal;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: normal;
+    height: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    color: #191B2A;
+    width: 100%;
+    resize: none;
+    font-family: "Inter", sans-serif;
+
+
+
+    &::placeholder {
+      font-family: "Inter", sans-serif;
+      color: #B3B4C9;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+  textarea {
+    height: 100%;
+  }
+
+
+}
